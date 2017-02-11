@@ -1,7 +1,7 @@
 FROM theultimate/mediabase
 MAINTAINER Maikel Dollé <maikel@itmagix.nl>
 
-RUN git clone --depth 1 https://github.com/sabnzbd/sabnzbd /sabnzbd
+RUN git clone --depth 1 https://github.com/sabnzbd/sabnzbd /sabnzbd --branch master
 
 ADD ./start.sh /start.sh
 ADD ./server.cert /sabnzbd
